@@ -1,0 +1,17 @@
+# Default values for app.
+# This is a YAML-formatted file.
+# Declare variables to be passed into your templates.
+appname: "app1"
+  # runAsUser: 1000
+replicaNum: 2
+name: "pythonapp1"
+port: 8000
+service:
+  name: "pythonservce"
+  type: "NodePort"
+  port: 8000
+  nodePort: 30570
+
+
+image:
+  repository: "asmaayounis/app1"
